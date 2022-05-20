@@ -15,6 +15,8 @@ class HudousanItem(scrapy.Item):
     # //基本情報//
     link = scrapy.Field()  # URL
     image = scrapy.Field()  # 画像
+    category = scrapy.Field()  # 種類
+    name = scrapy.Field()  # 名前
     price = scrapy.Field()  # 賃料
     operation = scrapy.Field()  # 管理費
     deposit = scrapy.Field()  # 保証金
@@ -28,7 +30,7 @@ class HudousanItem(scrapy.Item):
     access = scrapy.Field()  # アクセス
     # //中古住宅の物件概要//
     water = scrapy.Field()  # 水道料金
-    parking = scrapy.Field()  # 2台無料
+    parking = scrapy.Field()  # 駐車場
     window = scrapy.Field()  # 総戸数
     available = scrapy.Field()  # 入居・利用可能日
     now = scrapy.Field()  # 現状
@@ -42,10 +44,11 @@ class HudousanItem(scrapy.Item):
     sewage = scrapy.Field()  # 下水道
     waterline = scrapy.Field()  # 水道種別
     electrical = scrapy.Field()  # 電力会社
+    gas = scrapy.Field()  # ガス
     supply = scrapy.Field()  # 給油
     toilet = scrapy.Field()  # トイレ
-    bath = scrapy.Field()  # バス
     aircon = scrapy.Field()  # エアコン
+    laundry = scrapy.Field()  # 洗濯機場所
     dehumidifier = scrapy.Field()  # 浴室乾燥機
     shower = scrapy.Field()  # シャワー
     BS = scrapy.Field()  # BSアンテナ
